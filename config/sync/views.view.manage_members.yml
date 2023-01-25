@@ -213,20 +213,7 @@ display:
         type: tag
         options: {  }
       empty: {  }
-      sorts:
-        field_weight_value:
-          id: field_weight_value
-          table: node__field_weight
-          field: field_weight_value
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: standard
-          order: ASC
-          expose:
-            label: ''
-            field_identifier: ''
-          exposed: false
+      sorts: {  }
       arguments:
         field_member_of_target_id:
           id: field_member_of_target_id

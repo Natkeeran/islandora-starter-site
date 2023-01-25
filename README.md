@@ -18,6 +18,17 @@ tools and services that support it, try one of the Islandora deployment tools:
 * [ISLE-DC](https://github.com/Islandora-Devops/isle-dc) - Docker-based
   * use the `make starter` or `make starter_dev` option
 
+## Use
+
+> **Warning**
+> This currently applies a patch that will cause a resource-eating error if you configure a "Facet Summary" on the /search view. Don't do that.
+
+The starter site is supposed to be "a site where everything works". If you install the starter site and things do not work, please contribute that info! (I would like to have thorough tests to find regressions, but that's an entire project on its own).
+
+The starter site is supposed to be a way to get you going. You should be able to alter everything in the site to meet your specific needs. While it often takes a chain of related configurations working in harmony to make a feature work, please let us know if you find places where configurations are brittle or opaque. 
+
+The starter site is offered as a way to get you going, not a way to provide updates. The reason is that we expect you to configure the site to meet your own needs, and since changing one small thing can have cascading effects, naively updating an unknown site's configs is very likely to break your custom changes, if not your site. We endeavour to provide documentation (though the mechanism hasn't yet been determined) that will allow you to see at a glance what has changed and to see the steps to take to apply the changes, should you wish to.
+
 ## Manual Installation
 
 Your mileage may vary. Depending on your particular use case, some Islandora
@@ -200,7 +211,10 @@ In summary: These two messages seem to be ignorable.
 
 #### Patches
 
-There are currently no patches included with the Starter Site. If a patch (external or internal) is necessary, it can be applied automatically by composer by using the [composer-patches plugin](https://github.com/cweagans/composer-patches). Any patches included in the Starter Site should be described fully here (including when they should be removed).
+`assets/patches/facets/facets-master.diff`
+
+[Issue in Advanced Search](https://github.com/digitalutsc/advanced_search/issues/9) This patch is a hack that lets the facet module's facets work with ajax, in the presence of the advanced search module. This bug appeared because the facets module uses a new syntax to be forward-compatible with Symfony HttpFramework 5, even though Drupal 9 still uses HttpFramework 4. The situation is explained in the comments of this [Drupal issue](https://www.drupal.org/project/facets/issues/3260155). While this patch fixes the facets, it causes facet summaries to break in a very bad way.
+
 
 ### Ongoing Project Maintenance
 

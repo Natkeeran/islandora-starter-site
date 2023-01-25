@@ -35,7 +35,7 @@ display:
             alter_text: true
             text: 'Search within {{ drupal_field(''title'', ''node'', arguments.field_member_of_target_id ) }}'
             make_link: true
-            path: '/node/{{ raw_arguments.field_member_of_target_id }}/search'
+            path: '/search?f[0]=ancestors:{{ raw_arguments.field_member_of_target_id }}'
             absolute: false
             external: false
             replace_spaces: false

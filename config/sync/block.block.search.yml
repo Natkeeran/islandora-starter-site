@@ -1,34 +1,30 @@
-uuid: f1131ce4-e562-46ae-b9ba-3f7463e9a123
+uuid: 744c228e-9354-4785-8f28-649897f61299
 langcode: en
 status: true
 dependencies:
-  config:
-    - facets.facet.resource_type_2
   module:
+    - advanced_search
     - context
-    - facets
     - islandora
     - system
   theme:
     - olivero
-id: resourcetype_2
+id: search
 theme: olivero
-region: sidebar
+region: primary_menu
 weight: 0
 provider: null
-plugin: 'facet_block:resource_type_2'
+plugin: search_block
 settings:
-  id: 'facet_block:resource_type_2'
-  label: 'Resource Type'
-  label_display: visible
-  provider: facets
-  context_mapping: {  }
-  block_id: resourcetype_2
+  id: search_block
+  label: Search
+  label_display: '0'
+  provider: advanced_search
+  search_view_machine_name: view.solr_search_content.page_1
+  search_textfield_label: Search
+  search_placeholder: 'Enter some keywords'
+  search_submit_label: Search
 visibility:
-  context:
-    id: context
-    negate: null
-    values: ''
   user_status:
     id: user_status
     negate: false
@@ -40,6 +36,10 @@ visibility:
       own_page_true: '0'
       field_value: '0'
     user_fields: uid
+  context:
+    id: context
+    negate: null
+    values: ''
   context_all:
     id: context_all
     negate: null
@@ -51,5 +51,5 @@ visibility:
     mimetype: ''
   request_path:
     id: request_path
-    negate: false
-    pages: '/node/*/search'
+    negate: true
+    pages: /search

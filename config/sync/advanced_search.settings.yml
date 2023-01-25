@@ -3,3 +3,6 @@ search_recursive_parameter: r
 search_add_operator: +
 search_remove_operator: '-'
 facet_truncate: '32'
+case_insensitive_solr_field_prefix: ''
+lucene_on_off: 1
+lucene_label: Keyword

@@ -1,4 +1,4 @@
-uuid: 4f207cea-7b7f-4df6-b29d-c96897f2419e
+uuid: 221e4778-3dbb-4f6b-9618-c74d7bf0b512
 langcode: en
 status: true
 dependencies:
@@ -7,15 +7,15 @@ dependencies:
     - views.view.solr_search_content
   module:
     - search_api
-id: resource_type_2
-name: 'Resource Type'
+id: ancestors
+name: Ancestors
 weight: 0
 min_count: 1
 missing: false
 missing_label: others
-url_alias: resource_type
-facet_source_id: 'search_api:views_page__solr_search_content__page_2'
-field_identifier: field_resource_type
+url_alias: ancestors
+facet_source_id: 'search_api:views_page__solr_search_content__page_1'
+field_identifier: field_descendant_of
 query_operator: or
 hard_limit: 0
 exclude: false
