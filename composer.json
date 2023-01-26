@@ -120,9 +120,6 @@
             ]
         },
         "patches": {
-		"drupal/facets": {
-			"Hack so that facets reload with advanced search on.": "assets/patches/facets/facets-master.diff"
-		}
         }
     },
     "require-dev": {

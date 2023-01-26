@@ -211,10 +211,7 @@ In summary: These two messages seem to be ignorable.
 
 #### Patches
 
-`assets/patches/facets/facets-master.diff`
-
-[Issue in Advanced Search](https://github.com/digitalutsc/advanced_search/issues/9) This patch is a hack that lets the facet module's facets work with ajax, in the presence of the advanced search module. This bug appeared because the facets module uses a new syntax to be forward-compatible with Symfony HttpFramework 5, even though Drupal 9 still uses HttpFramework 4. The situation is explained in the comments of this [Drupal issue](https://www.drupal.org/project/facets/issues/3260155). While this patch fixes the facets, it causes facet summaries to break in a very bad way.
-
+There are currently no patches included with the Starter Site. If a patch (external or internal) is necessary, it can be applied automatically by composer by using the [composer-patches plugin](https://github.com/cweagans/composer-patches). Any patches included in the Starter Site should be described fully in this section (including when they should be removed).
 
 ### Ongoing Project Maintenance
 
