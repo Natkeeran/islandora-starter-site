@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8f5548da811dd1b137f16cb8729fcaeb",
+    "content-hash": "191ff53a06c63aa923e22ac688663227",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -5156,12 +5156,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/digitalutsc/advanced_search.git",
-                "reference": "c6d6072031c788d34174bca4c5f159cffc3c97ad"
+                "reference": "1daf654190946599dfe7328b4ffc95fba6e42f2c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/digitalutsc/advanced_search/zipball/c6d6072031c788d34174bca4c5f159cffc3c97ad",
-                "reference": "c6d6072031c788d34174bca4c5f159cffc3c97ad",
+                "url": "https://api.github.com/repos/digitalutsc/advanced_search/zipball/1daf654190946599dfe7328b4ffc95fba6e42f2c",
+                "reference": "1daf654190946599dfe7328b4ffc95fba6e42f2c",
                 "shasum": ""
             },
             "require": {
@@ -5201,7 +5201,7 @@
                 "issues": "https://github.com/digitalutsc/advanced_search/issues",
                 "source": "https://github.com/digitalutsc/advanced_search/tree/islandora_lite"
             },
-            "time": "2023-01-25T20:42:06+00:00"
+            "time": "2023-01-26T19:35:46+00:00"
         },
         {
             "name": "islandora/chullo",

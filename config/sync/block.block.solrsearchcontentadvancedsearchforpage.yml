@@ -20,10 +20,10 @@ settings:
   label_display: visible
   provider: advanced_search
   fields:
+    - title_aggregated_fulltext
+    - field_linked_agent_fulltext
     - field_description
-    - field_linked_agent_name
-    - subject_aggregated
-    - title_aggregated
+    - field_rights
   context_filter: null
 visibility:
   user_status:

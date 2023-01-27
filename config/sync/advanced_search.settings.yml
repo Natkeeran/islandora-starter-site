@@ -4,5 +4,5 @@ search_add_operator: +
 search_remove_operator: '-'
 facet_truncate: '32'
 case_insensitive_solr_field_prefix: ''
-lucene_on_off: 1
+lucene_on_off: 0
 lucene_label: Keyword
