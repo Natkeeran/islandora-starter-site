@@ -1,0 +1,16 @@
+diff --git a/src/Plugin/Field/FieldFormatter/CSVFileFormatter.php b/src/Plugin/Field/FieldFormatter/CSVFileFormatter.php
+index 2570b22..8b63087 100644
+--- a/src/Plugin/Field/FieldFormatter/CSVFileFormatter.php
++++ b/src/Plugin/Field/FieldFormatter/CSVFileFormatter.php
+@@ -515,7 +515,10 @@ class CSVFileFormatter extends FileFormatterBase {
+           }
+ 
+           // Render HTML table from CSV file.
+-          $file_name = $this->getFileSystem()->realpath($file->get('uri')->value);
++          /** @var \Drupal\Core\File\FileUrlGeneratorInterface $file_url_generator */
++          $file_url_generator = \Drupal::service('file_url_generator');
++          $file_name = $file_url_generator->generateAbsoluteString($file->get('uri')->value);
++
+           $table_data = $this->readcsv($file_name, $field_name . '-' . $item_count, $item->description);
+           $elements[$delta][$elemcount] = $table_data;
+ 

@@ -7,6 +7,11 @@ dependencies:
     - media.type.document
   module:
     - file
+    - filehash
+third_party_settings:
+  filehash:
+    dedupe: 0
+    dedupe_original: false
 _core:
   default_config_hash: DY5HtJTxUjFRGU_PaY6ifo2nhR-nAZ0y0s6kLmUbv5g
 id: media.document.field_media_document
@@ -23,7 +28,7 @@ settings:
   handler: 'default:file'
   handler_settings: {  }
   file_directory: '[date:custom:Y]-[date:custom:m]'
-  file_extensions: 'txt rtf doc docx ppt pptx xls xlsx pdf odf odg odp ods odt fodt fods fodp fodg key numbers pages'
+  file_extensions: 'txt rtf doc docx ppt pptx xls xlsx pdf odf odg odp ods odt fodt fods fodp fodg key numbers pages csv'
   max_filesize: ''
   description_field: false
 field_type: file

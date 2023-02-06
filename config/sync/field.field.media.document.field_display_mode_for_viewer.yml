@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.media.csv_viewer
     - core.entity_view_mode.media.pdfjs
     - field.storage.media.field_display_mode_for_viewer
     - media.type.document
@@ -20,5 +21,6 @@ default_value: {  }
 default_value_callback: ''
 settings:
   allowed_view_modes:
+    csv_viewer: csv_viewer
     pdfjs: pdfjs
 field_type: view_mode_switch

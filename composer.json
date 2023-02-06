@@ -33,6 +33,7 @@
         "drupal/admin_toolbar": "^3.1",
         "drupal/core-composer-scaffold": "^9.4",
         "drupal/core-recommended": "^9.4",
+        "drupal/csvfile_formatter": "^1.0",
         "drupal/facets": "^2",
         "drupal/field_group": "^3",
         "drupal/field_permissions": "^1",
@@ -42,7 +43,7 @@
         "drupal/matomo": "^1.19",
         "drupal/pdf": "^1.1",
         "drupal/rest_oai_pmh": "^2.0@beta",
-        "drupal/search_api_solr": "^4.2",
+        "drupal/search_api_solr": "*",
         "drupal/taxonomy_manager": "^2.0",
         "drupal/transliterate_filenames": "^2.0",
         "drupal/twig_tweak": "^3.2",
@@ -54,7 +55,9 @@
         "islandora/islandora": "^2",
         "islandora/openseadragon": "^2",
         "library/pdf.js": "^2.4",
-        "mjordan/islandora_workbench_integration": "^1.0"
+        "maennchen/zipstream-php": "2.2.6",
+        "mjordan/islandora_workbench_integration": "^1.0",
+        "symfony/string": "5.4"
     },
     "conflict": {
         "drupal/drupal": "*",
@@ -115,6 +118,9 @@
             ]
         },
         "patches": {
+            "drupal/csvfile_formatter": {
+                "File url lookup": "assets/patches/file_url_generator.patch"
+            }
         }
     },
     "require-dev": {
