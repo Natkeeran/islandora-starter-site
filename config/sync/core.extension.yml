@@ -84,6 +84,7 @@ module:
   pgsql: 0
   prepopulate: 0
   rdf: 0
+  replaywebpage: 0
   responsive_image: 0
   rest: 0
   rest_oai_pmh: 0

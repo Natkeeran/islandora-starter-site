@@ -1,0 +1,29 @@
+uuid: e97584ea-bac8-4a67-942d-730d21a17239
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_media_of
+    - media.type.web_archive
+    - node.type.islandora_object
+id: media.web_archive.field_media_of
+field_name: field_media_of
+entity_type: media
+bundle: web_archive
+label: 'Media of'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      islandora_object: islandora_object
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
