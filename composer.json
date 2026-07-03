@@ -67,7 +67,8 @@
         "islandora-rdm/islandora_fits": "dev-8.x-1.x as 1.x-dev",
         "islandora/views_nested_details": "^1.0",
         "library/pdf.js": "^5",
-        "mjordan/islandora_workbench_integration": "^1"
+        "mjordan/islandora_workbench_integration": "^1",
+        "drupal/flysystem_s3": "^3.0"
     },
     "conflict": {
         "drupal/drupal": "*",
